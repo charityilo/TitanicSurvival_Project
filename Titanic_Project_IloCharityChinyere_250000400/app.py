@@ -6,7 +6,7 @@ import os
 app = Flask(__name__)
 
 # Load trained pipeline (includes preprocessing + SVM)
-model = joblib.load("model/titanic_svm_pipeline.pkl")
+model = joblib.load("model/titanic_survival_model.pkl")
 
 @app.route("/", methods=["GET", "POST"])
 def index():
